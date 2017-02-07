@@ -73,7 +73,7 @@ class NeuralNetwork(object):
                                        (self.output_nodes, self.hidden_nodes))
         self.lr = learning_rate
         
-        #### Set this to your implemented sigmoid function ####
+        
         # Activation function is the sigmoid function
         self.activation_function = lambda x: 1.0 / ( 1.0 + np.exp(-x))
     
@@ -82,7 +82,7 @@ class NeuralNetwork(object):
         inputs = np.array(inputs_list, ndmin=2).T
         targets = np.array(targets_list, ndmin=2).T
         
-        #### Implement the forward pass here ####
+        
         ### Forward pass ###
         # Hidden layer
         hidden_inputs = np.dot(self.weights_input_to_hidden,inputs)# signals into hidden layer
